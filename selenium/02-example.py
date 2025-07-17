@@ -2,6 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import os
 
 from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
@@ -9,6 +10,7 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
+os.makedirs('img', exist_ok=True)
 
 driver = webdriver.Chrome(options=chrome_options) #또는 chromedriver.exe
 driver.implicitly_wait(3) # 묵시적 대기, 활성화를 최대 15초가지 기다린다.
