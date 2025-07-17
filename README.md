@@ -10,6 +10,7 @@ Python 3.13.3
 
 ## Selenium 설치 for Linux  
 ```
+######### Chrome 브라우저 설치
 # Google 서명 키 다운로드 및 추가
 > sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
  
@@ -30,9 +31,8 @@ EOF
 > google-chrome --version
 Google Chrome 138.0.7204.92
 >
-```
 
-```
+######### ChromeDriver 설치
 # 버전 확인
 > curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json"
 {"timestamp":"2025-06-30T21:09:36.285Z","channels":{"Stable":{"channel":"Stable","version":"138.0.7204.92","revision":"1465706"},"Beta":{"channel":"Beta","version":"139.0.7258.5","revision":"1477651"},"Dev":{"channel":"Dev","version":"140.0.7259.2","revision":"1478297"},"Canary":{"channel":"Canary","version":"140.0.7269.0","revision":"1480320"}}}
